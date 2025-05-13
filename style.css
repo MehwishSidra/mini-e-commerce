@@ -66,7 +66,12 @@
   .btn-cat:hover {
     box-shadow: 0 8px 50px -7px black;
   }
-  
+  #icon {
+     height: 20px;
+     width: 20px ;
+     font-size: 18px;
+     color: black ;
+  }
   .btn {
     padding: 10px;
     margin: 10px;
@@ -202,8 +207,9 @@
     width: 10%;
     border: none;
     border-radius: 4px;
-    cursor: pointer; }
-   
+    cursor: pointer; 
+}
+  
   .form-container input {
       display: flex; 
       align-items: center;
@@ -240,3 +246,398 @@
     align-content: center;
     align-items: center;
   }  
+  .hamburger {
+   display: none;     
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+    top: 35px;
+  }
+  
+  
+
+@media (max-width: 1024px) {
+    .main {
+      flex-direction: column;
+      align-items: center;
+    }
+    .navBar{
+        height: 100px;
+        width: 100%;
+       
+    }
+    .hamburger {
+        display: block; 
+        font-size: 25px;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    right: 15px;
+    top: 25px;
+
+      }
+   
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #f1f1f1;
+        position: absolute;
+        margin-top: 60px;
+        top: 50px;
+        right: 15px;
+        padding: 10px;
+        box-shadow: 0px 0px 10px #aaa;
+        border-radius: 8px;
+      }
+      .menu a {
+        text-decoration: none;
+        color: #333;
+        padding: 5px 0;
+      }  
+        .aside {
+      position: static;
+      width: 100%;
+      height: auto;
+      display: flex;
+     
+      justify-content: center;
+    }
+  
+    .aside h3 {
+      width: auto;
+      margin-bottom: 10px;
+    }
+  
+    .btn-cat {
+      width: auto;
+      margin: 5px;
+    }
+  
+    .container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      width: 100%;
+      margin: 20px;
+    }
+  
+    .searchBar {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .navBar {
+        display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      
+    }
+  
+    .menu ul {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .logo img {
+      width: 60px;
+    }
+  
+    .dropbtn {
+      margin: 10px 0;
+    }
+    
+  }
+  @media (max-width: 768px){
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+        height: 50px;
+      }
+      .hamburger {
+        display: block; 
+        font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+
+      }
+     button .btn{
+        font-size: 100px;
+     }
+      .menu {
+          display: none;
+          flex-direction: column;
+          background-color: #f1f1f1;
+          position: absolute;
+          margin-top: 100px;
+          top: 10px;
+          right: 10px;
+          padding: 10px;
+          box-shadow: 0px 0px 10px #aaa;
+          border-radius: 8px;
+        }
+        .menu a {
+          text-decoration: none;
+          color: #333;
+          padding: 5px 0;
+        }  
+          .aside {
+        position: static;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    
+      .aside h3 {
+        width: auto;
+        margin-bottom: 10px;
+      }
+    
+      .btn-cat {
+        width: auto;
+        margin: 5px;
+      }
+    
+      .container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        width: 100%;
+        margin: 40px;
+      }
+    
+      .searchBar {
+        width: 50%;
+        padding: 5px;
+       
+      }
+    
+      .navBar {
+        display: flex;
+        gap: 5px;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+      }
+    
+      .menu ul {
+        flex-direction: column;
+        padding: 0;
+        width: 100px;
+        height: 100px;
+      }
+    
+      .logo img {
+        width: 70px;
+        height: 50px ;
+        margin-left: 15px;
+      }
+    
+      .dropbtn {
+        margin: 10px 0;
+      }
+
+  }
+  @media (max-width: 640px)
+  
+  {
+    .main {
+        flex-direction: column;
+        align-items: center;
+        height: 90px;
+      }
+      .hamburger {
+        display: block; 
+        font-size: 15px;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    right: 5px;
+    top: 15px;
+
+      }
+     button .btn{
+        font-size: 40px;
+     }
+      .menu {
+          display: none;
+          flex-direction: column;
+          background-color: #f1f1f1;
+          position: absolute;
+          margin-top: 100px;
+          top: 5px;
+          right: 5px;
+          padding: 10px;
+          box-shadow: 0px 0px 10px #aaa;
+          border-radius: 8px;
+        }
+        .menu a {
+          text-decoration: none;
+          color: #333;
+          padding: 5px 0;
+        }  
+          .aside {
+        position: static;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    
+      .aside h3 {
+        width: auto;
+        margin-bottom: 5px;
+      }
+    
+      .btn-cat {
+        width: auto;
+        margin: 5px;
+      }
+    
+      .container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        width: 100%;
+        margin: 40px;
+      }
+    
+      .searchBar {
+        width: 35%;
+        padding: 5px;
+       
+      }
+    
+      .navBar {
+        display: flex;
+        gap: 5px;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        
+      }
+    
+      .menu ul {
+        flex-direction: column;
+        padding: 0;
+        width: 100px;
+        height: 100px;
+      }
+    
+      .logo img {
+        width: 60px;
+        height: 50px ;
+        margin-left: 0px;
+      }
+    
+      .dropbtn {
+        margin: 10px 0;
+      }
+
+  }
+  @media (max-width: 400px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+        height: 80px;
+      }
+      .hamburger {
+        display: block; 
+        font-size: 15px;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    right: 15px;
+    top: 25px;
+
+      }
+     button .btn{
+        font-size: 40px;
+     }
+      .menu {
+          display: none;
+          flex-direction: column;
+          background-color: #f1f1f1;
+          position: absolute;
+          margin-top: 100px;
+          top: 5px;
+          right: 5px;
+          padding: 10px;
+          box-shadow: 0px 0px 10px #aaa;
+          border-radius: 8px;
+        }
+        .menu a {
+          text-decoration: none;
+          color: #333;
+          padding: 5px 0;
+        }  
+          .aside {
+        position: static;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    
+      .aside h3 {
+        width: auto;
+        margin-bottom: 5px;
+      }
+    
+      .btn-cat {
+        width: auto;
+        margin: 5px;
+      }
+    
+      .container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        width: 100%;
+        margin: 40px;
+      }
+    
+      .searchBar {
+       
+        width: 35%;
+        padding: 5px;
+       
+      }
+    
+      .navBar {
+        display: flex;
+        
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        
+      }
+    
+      .menu ul {
+        flex-direction: column;
+        padding: 0;
+        width: 100px;
+        height: 100px;
+      }
+    
+      .logo img {
+        width: 60px;
+        height: 50px ;
+        margin-left: 0px;
+      }
+    
+      .dropbtn {
+        margin: 10px 0;
+      }
+    }
+    @media (max-width: 456px){
+        .searchBar{
+            display: none;
+        }
+        .navBar {
+            display: flex;
+            flex-direction: row;
+           
+           
+            
+          }
+    }
