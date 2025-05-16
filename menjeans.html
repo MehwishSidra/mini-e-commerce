@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menstyle.css" />
+</head>
+<body>
+    <div  class="container">
+        <div class="left">
+          <img id="main-img" src="img/jeans.PNG" alt="Product" />
+          <div class="thumbnails">
+            <img src="img/jeans.PNG" class="thumb active" onclick="changeImage(this)" />
+            <img src="img/jeans.PNG" class="thumb" onclick="changeImage(this)" />
+            <img src="img/jeans.PNG" class="thumb" onclick="changeImage(this)" />
+            <img src="img/jeans.PNG" class="thumb" onclick="changeImage(this)" />
+          </div>
+        </div>
+        <div class="right">
+          <h4>Jeans Company</h4>
+          <h1>Fall Limited Edition Jeans</h1>
+          <p>These low-profile jeans are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+          <div class="price">
+            $125.00 <span class="discount">50%</span>
+            <br>
+            <del>$250.00</del>
+          </div>
+          <div class="quantity">
+            <button onclick="decreaseQty()">-</button>
+            <input type="text" id="qty" value="0" readonly />
+            <button onclick="increaseQty()">+</button>
+          </div>
+          <button class="add-to-cart" data-name="Item 1" data-price="10.00">Add to Cart</button>
+
+        </div>
+      </div>
+      <script src="men.js"></script>
+</body>
+</html>

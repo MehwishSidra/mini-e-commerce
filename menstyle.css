@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  body {
+    background-color: #f7f7f7;   
+ 
+    
+  }
+
+  .container {
+    display: flex;
+    gap: 50px;
+    background: #fff;
+    margin-top: 100px;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 1000px;
+   align-items: center;
+   align-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+ 
+.navBar{
+    height: 100px;
+    display: flex;
+    padding: 10px;
+    
+}
+.navBar button{
+   
+  gap: 30px;
+    width: auto;
+   
+}
+.butn{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    
+}
+  .left {
+    flex: 1;
+  }
+
+  .left img {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .thumbnails {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .thumbnails img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+
+  .thumbnails img.active {
+    border-color: #04aa6d;
+  }
+
+  .right {
+    flex: 1;
+  }
+
+  .right h4 {
+    color: #04aa6d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .right h1 {
+    font-size: 28px;
+    margin: 15px 0;
+  }
+
+  .right p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .price del {
+    color: #999;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .discount {
+    background-color: #ffe6cc;
+    color: #04aa6d;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  .quantity button {
+    padding: 5px 12px;
+    font-size: 18px;
+  }
+
+  .quantity input {
+    width: 40px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .add-to-cart {
+    background-color: #04aa6d;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+  }

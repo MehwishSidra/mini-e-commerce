@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menstyle.css" />
+</head>
+<body>
+    <div class="navBar">
+        <div class="logo">
+          <img
+            src="img/online-shop-logo-happy-shop-logo-design-vector.jpg"
+            alt=""
+          />
+        </div>
+        <div class="butn">
+         <a href="index.html" > <button  class="btn-cat" value="All">All</button> </a>
+         <a href="men.html"> <button class="btn-cat" value="men's clothing"> Men's clothing</button></a>
+          <a href="#"><button class="btn-cat" value="women's clothing">
+            Women's clothing
+          </button> </a>
+          <a href="#"><button class="btn-cat" value="jewelery">Jewelery</button> </a>
+         <a href="#"> <button class="btn-cat" value="electronics">Electronics</button></a>
+        </div>
+      </div>
+    <div class="container">
+        <div class="left">
+          <img id="main-img" src="img/shoe.PNG" alt="Product" />
+          <div class="thumbnails">
+            <img src="img/shoe.PNG" class="thumb active" onclick="changeImage(this)" />
+            <img src="img/shoe.PNG" class="thumb" onclick="changeImage(this)" />
+            <img src="img/shoe.PNG" class="thumb" onclick="changeImage(this)" />
+            <img src="img/shoe.PNG" class="thumb" onclick="changeImage(this)" />
+          </div>
+        </div>
+        <div class="right">
+          <h4>Sneaker Company</h4>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+          <div class="price">
+            $125.00 <span class="discount">50%</span>
+            <br>
+            <del>$250.00</del>
+          </div>
+          <div class="quantity">
+            <button onclick="decreaseQty()">-</button>
+            <input type="text" id="qty" value="0" readonly />
+            <button onclick="increaseQty()">+</button>
+          </div>
+          <button class="add-to-cart">Add to cart</button>
+        </div>
+      </div>
+      <script src="men.js"></script>
+</body>
+</html>
